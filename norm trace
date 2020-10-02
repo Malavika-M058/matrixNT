@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+  static int array[20][20];
+  int i,j,r,c,sum=0,sq=0,sum1=0,normal;
+  printf("Enter the order of matrix");
+  scanf("%d%d",&r,&c);
+  printf("enter the elements of matrix")
+  for(i=0:i<r;i++)
+   {
+     for(j=0;j<c;j++)
+      {
+        scanf("%d",array[i][j]);
+        sq=array[i][j]*array[i][j];
+        sum1=sum1+sq;
+       }
+    } 
+    normal=sqrt(sum1);
+    printf("normal=%d",normal);
+    for(i=0;i<r;i++)
+     {
+      sum=sum+array[i][j];
+      }
+     printf("trace=%d",sum);
+  }
